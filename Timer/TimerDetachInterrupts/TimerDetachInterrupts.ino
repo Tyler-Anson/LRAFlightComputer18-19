@@ -4,7 +4,7 @@
 #define blinkTime 500000 // In microseconds
 #define MAX_BLINKS 5
 int numBlinks = 0;
-bool ledOn = false;
+volatile bool ledOn = false;
 void blinkLED();
 
 void setup()

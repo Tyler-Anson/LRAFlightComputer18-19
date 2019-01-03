@@ -5,7 +5,7 @@
 #define ledPin2 5
 #define blinkTime 500000 // in microseconds
 #define duty 500 // between 0 and 1024
-bool ledOn = false;
+volatile bool ledOn = false;
 void blinkLED();
 
 void setup()
