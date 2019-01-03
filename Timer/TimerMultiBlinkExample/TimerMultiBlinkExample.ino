@@ -27,6 +27,8 @@ void loop()
 void blinkLED()
 {
   // no ack needed for interrupt
+  cli(); // disable interrupts
   digitalWrite(ledPin1, ledOn);
   ledOn = !ledOn;
+  sei(); // re-enable interrupts
 }
