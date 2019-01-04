@@ -2,7 +2,7 @@
 
 #define ledPin 13
 #define blinkTime 500000 // In microseconds
-bool ledOn = false;
+volatile bool ledOn = false;
 void blinkLED();
 
 void setup()
