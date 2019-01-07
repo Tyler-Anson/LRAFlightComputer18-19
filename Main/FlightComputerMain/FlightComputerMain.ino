@@ -1,12 +1,16 @@
 // Set the programming board to a Mega
 
+// RTC Includes and Initializations
+#include <RTClib.h>
+
+// Timer Includes and Initializations
 #include <TimerOne.h>
 #include <TimerThree.h>
 
-#include <LSM9DS1_Registers.h>
-#include <LSM9DS1_Types.h>
-#include <SparkFunLSM9DS1.h>
+// LSM9DS1 Includes and Initializations
+#include <Adafruit_LSM9DS1.h>
 
+// GPS Includes and Initializations
 #include <SoftwareSerial.h>
 #include <Adafruit_GPS.h>
 
@@ -16,6 +20,8 @@ SoftwareSerial serialToGPS(arduinoSerialRxPin, arduinoSerialTxPin);
 Adafruit_GPS GPS(&serialToGPS);
 bool validLastNmeaStatement;  
 void parseAndUpdateGPS();
+
+// End of Includes and Initializations
 
 void setup() 
 {
