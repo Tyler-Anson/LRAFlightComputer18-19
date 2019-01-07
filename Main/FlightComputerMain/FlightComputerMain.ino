@@ -1,6 +1,7 @@
 // Set the programming board to a Mega
 
 // RTC Includes and Initializations
+#include <Wire.h>
 #include <RTClib.h>
 
 // Timer Includes and Initializations
