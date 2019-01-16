@@ -30,7 +30,7 @@ static unsigned long lastPrint = 0; // Keep track of print time
 // a declination to get a more accurate heading. Calculate 
 // your's here:
 // http://www.ngdc.noaa.gov/geomag-web/#declination
-#define DECLINATION -8.58 // Declination (degrees) in Boulder, CO.
+#define DECLINATION 3.44 // Declination (degrees) in Austin
 
 float roll, pitch, heading; 
 
